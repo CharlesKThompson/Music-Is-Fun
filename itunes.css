@@ -1,0 +1,22 @@
+* {
+    outline: 1px solid  blue;
+}
+
+body {
+    background: rgb(58, 88, 74);
+    align-content: center;
+    align-items: center;
+
+}
+
+
+.songs {
+    width: auto;
+    outline: solid 2px white;
+    color: rgb(240, 226, 197);
+    background: black;
+}
+
+.spacer {
+    height: 9rem;
+}

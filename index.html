@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="itunes.css">
 </head>
 
 <body>
+    <div class ="spacer">
+        
+    </div>
     <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group">
@@ -18,8 +22,17 @@
             <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
         </div>
     </form>
-    <div id="songs">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
 
+            <div id="songs" class="col-sm-12">
+
+                <ul id="songs-list">
+
+                </ul>
+
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="itunes-service.js"></script>
